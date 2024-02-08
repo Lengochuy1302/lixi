@@ -50,6 +50,8 @@
     const bank = params["bank"];
 
     function switchButton() {
+        var audio = new Audio("duck.mp3");
+    audio.play();
         $("#meme1").css("display", "none");
         $("#meme2").css("display", "block");
         var leftNo = $("#no").css("left");
