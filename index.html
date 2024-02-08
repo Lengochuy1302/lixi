@@ -50,8 +50,6 @@
     const bank = params["bank"];
 
     function switchButton() {
-        var audio = new Audio("sound/duck.mp3");
-    audio.play();
         $("#meme1").css("display", "none");
         $("#meme2").css("display", "block");
         var leftNo = $("#no").css("left");
@@ -65,6 +63,8 @@
     }
 
     function moveButton() {
+        var audio = new Audio("sound/duck.mp3");
+        audio.play();
         if (screen.width <= 600) {
             var x = Math.random() * 200;
             var y = Math.random() * 400;
